@@ -161,7 +161,7 @@ return (<div>
     </div>
     <p className="contact"> Contact &#64;</p>
     <p className="text-center text-body-secondary parent-folio">
-      <a href="https://okunola-devportfolio.netlify.app/port.html" className="folio-link">OUR PORTFOLIO</a>
+      <a href="#" className="folio-link">OUR PORTFOLIO</a>
       </p>
   </footer>
 </div>
