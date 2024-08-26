@@ -1,13 +1,202 @@
 body {
   margin: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#D8FAC8;
+}
+@media(max-width:318px){
+  body{
+      visibility:hidden;
+  }
+  }
+.header{
+  font-family: "Ga Maamli";
+  text-align: center;
+  color:#1B365C;
+  margin-top:1rem;
+}
+.sub-header1{
+  font-size: 3rem;
+}
+.sub-header2{
+  font-size:1.5rem;
+}
+.aside{
+  text-align: center;
+}
+.asider{
+  background-color: #1B365C;
+  color: whitesmoke;
+}
+.subAside{
+  font-family:"Anton SC";
+  font-size: 2rem;
+}
+.sub-aside1, .sub-aside2{
+  font-family: "Odibee Sans";
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+.weatherIcon{
+  color: #5E48E8;
+  animation: weatherIconTransfer 6s infinite;
+  font-size: 4rem !important;
+}
+.ai-icon{
+  font-size: 8rem !important;
+}
+.main{
+  margin-top: 3rem;
+  border-bottom: 2px solid gray;
+  border-top: 2px solid gray;
+}
+.box-form{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: whitesmoke;
+}
+.weather-button{
+    background-color: #5E48E8;
+    color:white;
+    font-family: "Permanent Marker";
+    padding:10px;
+    border: none;
+}
+.city-name, .city-desc, .weather-advice, .weather-temp, .weather-pre, .weather-hum, .weather-grn, .weather-sea{
+  border-bottom: 1px solid gray;
+  font-family:  "Odibee Sans";
+  font-size: 1.3rem
+}
+.weather-opt{
+  font-family:  "Chewy";
+}
+.lessmore-button{
+  display:grid;
+  grid-template-columns: 8rem 15rem;
+}
+.footer{
+  position: relative;
+  top: 4rem;
+  background-color: black;
+  color:white;
+  font-family: "Odibee Sans";
+}
+.contact{
+  text-align: center;
+}
+.inc{
+  text-align: center;
+}
+.folio-link{
+  text-decoration: none;
+  color: #5E48E8;
+  font-family: "Ga Maamli";
+  font-size: 1.5rem;
+  border: 2px dotted white;
+}
+@keyframes weatherIconTransfer {
+  0% {
+      transform: perspective(400px) scaleX(1);
+  }
+
+  100% {
+      transform: perspective(400px) scaleX(-1);
+  }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (min-width:431px) {
+  .subAside{
+    font-family:"Anton SC";
+    font-size: 3rem;
+  }
+  .weatherIcon{
+    font-size: 6rem !important;
+  }
+  .lessmore-button{
+    display:grid;
+    grid-template-columns: 10rem 17rem;
+  }
+  .footer{
+  font-size: 1.5rem;
+  }
+}
+
+@media (min-width:540px){
+  .box-form{
+    display: grid;
+    grid-template-columns: auto 9rem;
+}
+.weatherIcon{
+  font-size: 9rem !important;
+}
+.lessmore-button{
+  display:grid;
+  grid-template-columns: 10rem 30rem;
+  
+}
+.weather-opt{
+  font-family:  "Chewy";
+  font-size: 1rem;
+}
+}
+
+@media (min-width:700px){
+  .subAside{
+    font-size: 4rem;
+  }
+  .weatherIcon{
+    font-size: 8rem !important;
+  }
+  .lessmore-button{
+    display:grid;
+    grid-template-columns: 10rem 55rem;
+  }
+  .city-name, .city-desc, .weather-advice, .weather-temp, .weather-pre, .weather-hum, .weather-grn, .weather-sea{
+    font-size: 1.5rem
+  }
+  .weather-opt{
+    font-family:  "Chewy";
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width:900px){
+  .lessmore-button{
+    display:grid;
+    grid-template-columns: 10rem 80rem;
+  }
+  .subAside{
+    font-size: 5rem;
+  }
+}
+
+@media (min-width:1115px){
+  .sub-header1{
+    font-size: 5rem;
+  }
+  .sub-header2{
+    font-size:3rem;
+  }
+  .subAside{
+    font-size: 6rem;
+  }
+  .lessmore-button{
+    display:grid;
+    grid-template-columns: 10rem 110rem;
+  }
+  .weatherIcon{
+    font-size: 9rem !important;
+  }
+  .ai-icon{
+    font-size: 10rem !important;
+  }
 }
