@@ -6,18 +6,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#D8FAC8;
+  background-color:rgb(233, 229, 230);
 }
-@media(max-width:318px){
-  body{
-      visibility:hidden;
-  }
-  }
+
 .header{
   font-family: "Ga Maamli";
   text-align: center;
   color:#1B365C;
   margin-top:1rem;
+}
+.nav-item{
+  font-size: 1rem;
 }
 .sub-header1{
   font-size: 3rem;
@@ -29,7 +28,7 @@ body {
   text-align: center;
 }
 .asider{
-  background-color: #1B365C;
+  background-color: black;
   color: whitesmoke;
 }
 .subAside{
@@ -42,7 +41,7 @@ body {
   font-size: 2rem;
 }
 .weatherIcon{
-  color: #5E48E8;
+  color: #1B365C;
   animation: weatherIconTransfer 6s infinite;
   font-size: 4rem !important;
 }
@@ -113,6 +112,11 @@ code {
     monospace;
 }
 
+@media(max-width:318px){
+  body{
+      visibility:hidden;
+  }
+  }
 @media (min-width:431px) {
   .subAside{
     font-family:"Anton SC";

@@ -159,10 +159,6 @@ return (<div>
       <p className="nav-item"> &copy; {everyYear}</p>
       <p className="nav-item">Okunola_Developer all right reserved</p>
     </div>
-    <p className="contact"> Contact &#64;</p>
-    <p className="text-center text-body-secondary parent-folio">
-      <a href="#" className="folio-link">OUR PORTFOLIO</a>
-      </p>
   </footer>
 </div>
 </div>)
